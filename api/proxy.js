@@ -1,6 +1,6 @@
 export const config = { runtime: "edge" };
 
-const TARGET = "https://proxy.mtwsistemas.store"
+const TARGET = "https://proxy.mtwsistemas.store";
 
 const HOP_BY_HOP = new Set([
   "host","connection","keep-alive","te","trailer","transfer-encoding",
@@ -10,8 +10,6 @@ const HOP_BY_HOP = new Set([
 ]);
 
 export default async function handler(req) {
-  if (!TARGET) return new Response("TARGET_DOMAIN not set", { status: 500 });
-
   const { pathname, search } = new URL(req.url);
   const outHeaders = new Headers();
   let clientIp = null;
