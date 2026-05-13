@@ -1,6 +1,6 @@
 export const config = { runtime: "edge" };
 
-const TARGET_BASE = "https://proxy.mtwsistemas.store";
+const TARGET_BASE = "https://vercel.mtwsistemas.store";
 
 const STRIP_HEADERS = new Set([
   "host",
