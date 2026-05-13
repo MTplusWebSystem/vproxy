@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://138.255.74.94:443/$1"
-    }
+    { "source": "/(.*)", "destination": "/api/proxy" }
   ]
 }
