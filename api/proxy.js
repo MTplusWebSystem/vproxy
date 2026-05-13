@@ -1,6 +1,6 @@
 export const config = { runtime: "edge" };
 
-const TARGET = "https://proxy.mtwsistemas.store";
+const TARGET = "proxy.mtwsistemas.store";
 
 const HOP_BY_HOP = new Set([
   "host","connection","keep-alive","te","trailer","transfer-encoding",
