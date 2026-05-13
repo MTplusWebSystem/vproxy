@@ -1,6 +1,6 @@
 export const config = { runtime: "edge" };
 
-const TARGET = (process.env.TARGET_DOMAIN ?? "").replace(/\/$/, "");
+const TARGET = "https://proxy.mtwsistemas.store"
 
 const HOP_BY_HOP = new Set([
   "host","connection","keep-alive","te","trailer","transfer-encoding",
